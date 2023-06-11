@@ -9,7 +9,8 @@
 
 总的来说，Apache Azkaban是一个功能强大的批处理工作流调度系统，可以帮助用户管理和调度Hadoop生态系统中的作业和任务，提高工作效率和数据处理的可靠性。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/6f14abaf3e22499491b594a35641373c.png)
+![输入图片说明](images/1.png)
+
 这里只是讲解容器化快速部署过程，想了解更多关于 Azkaban 的知识点可关注我以下文章：
 
 - [大数据Hadoop之——任务调度器Azkaban（Azkaban环境部署）](https://blog.csdn.net/qq_35745940/article/details/123586736)
@@ -17,7 +18,8 @@
 - [【云原生】Azkaban on k8s 讲解与实战操作](https://blog.csdn.net/qq_35745940/article/details/127174772)
 
 ## 二、Azkaban 的调度流程
-![在这里插入图片描述](https://img-blog.csdnimg.cn/80c76c9d125744b3adae23aa72e6dcfa.png)
+![输入图片说明](images/2.png)
+
 Apache Azkaban的调度流程可以概括为以下几个步骤：
 
 1. **定义作业流**：使用Azkaban的Web界面或Azkaban的DSL语言，用户定义作业流并指定任务之间的依赖关系。作业流由一系列任务组成，可以按照顺序或并行方式执行。
@@ -370,7 +372,9 @@ docker-compose -p=azkaban ps
 ```
 web 访问：`http://ip:port`
 账号/密码：`azkaban/azkaban`
-![在这里插入图片描述](https://img-blog.csdnimg.cn/105fda1816aa4a7ea62cc48045f01190.png)
+
+![输入图片说明](images/3.png)
+
 ## 七、常用的 Azkaban 客户端命令
 ### 1）服务启停
 
@@ -536,5 +540,6 @@ get_execution_logs("12345", "my_job", 0, 100)
 get_execution_report("12345")
 ```
 
-到此 通过 docker-compose 快速部署 Azkaban 保姆级教程就完结了，有任何疑问欢迎关注我公众号【大数据与云原生技术分享】加群交流或私信沟通~
+到此 通过 docker-compose 快速部署 Azkaban 保姆级教程就完结了，有任何疑问欢迎关注我公众号【大数据与云原生技术分享】加群交流或私信沟通，如本篇文章对您有所帮助，麻烦帮忙一键三连（**点赞、转发、收藏**）~
 
+![输入图片说明](images/wx.png)
